@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import enData from './languages/En.json'
-import arData from './languages/Ar.json'
+import enData from "./languages/En.json";
+import arData from "./languages/Ar.json";
 
 const resources = {
   en: {
