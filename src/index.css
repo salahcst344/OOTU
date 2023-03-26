@@ -8,8 +8,10 @@
   --secndary-shade: #10bcb6;
   --secndary-color: #14ebe3;
   --secndary-tint: #43efe9;
-  --white: #e6cfe6;
-  --black: #1a031a;
+  --white: #f2e7f2;
+  --black: #0d010d;
+  --black-low-opacity: rgba(13, 1, 13, 0.2);
+  --black-med-opacity: rgba(13, 1, 13, 0.5);
 }
 
 * {
@@ -25,9 +27,20 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  line-height: 1;
-  font-weight: 400;
   color: var(--white);
   overflow-x: hidden;
+  background-image: linear-gradient(
+      var(--black-low-opacity),
+      var(--black-low-opacity)
+    ),
+    url("./assets/stars2.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.link:link,
+.link:visited {
+  color: inherit;
+  text-decoration: none;
+  font-size: 2rem;
 }
