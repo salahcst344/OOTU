@@ -1,4 +1,4 @@
-const TertiaryHeading = ({ Children, styles }) => {
+const TertiaryHeading = ({ children, styles }) => {
   return (
     <h3
       style={{
@@ -8,7 +8,7 @@ const TertiaryHeading = ({ Children, styles }) => {
         ...styles,
       }}
     >
-      {Children}
+      {children}
     </h3>
   );
 };
