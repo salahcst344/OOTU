@@ -3,7 +3,7 @@ const CenteredContainer = ({ hero, children }) => {
     <div
       style={{
         maxWidth: !hero ? "120rem" : "80rem",
-        padding: "0 3.2rem",
+        paddingInline: "3.2rem",
         margin: "0 auto",
       }}
     >
