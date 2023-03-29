@@ -3,10 +3,6 @@ import Layout from "../components/templates/Layout";
 const PageLayout = ({ children }) => {
   const navLinks = [
     {
-      text: "services",
-      path: "/services",
-    },
-    {
       text: "pricing",
       path: "/pricing",
     },
@@ -23,8 +19,16 @@ const PageLayout = ({ children }) => {
       path: "/blog",
     },
   ];
+  const CTABtn = {
+    text: "services",
+    path: "/services",
+  };
 
-  return <Layout navLinks={navLinks}>{children}</Layout>;
+  return (
+    <Layout navLinks={navLinks} CTABtn={CTABtn}>
+      {children}
+    </Layout>
+  );
 };
 
 export default PageLayout;
