@@ -10,8 +10,8 @@ const HeroBtnStack = ({ mainBtn, secondaryBtn }) => {
         justifyContent: "center",
       }}
     >
-      <MainBtn>{mainBtn}</MainBtn>
-      <SecondaryBtn>{secondaryBtn}</SecondaryBtn>
+      <MainBtn href={mainBtn.path}>{mainBtn.text}</MainBtn>
+      <SecondaryBtn href={secondaryBtn.path}>{secondaryBtn.text}</SecondaryBtn>
     </div>
   );
 };
