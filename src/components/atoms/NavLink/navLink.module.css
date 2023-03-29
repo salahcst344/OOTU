@@ -1,4 +1,4 @@
-.main-nav-link {
+.main-nav-link:link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
   translate: 0 250%;
   width: 100%;
   height: 0.5rem;
-  background-color: var(--secndary-color);
+  background-color: var(--primary-color);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -31,5 +31,5 @@
 .active:visited,
 .main-nav-link:link:hover,
 .main-nav-link:visited:hover {
-  color: var(--secndary-color);
+  color: var(--primary-color);
 }
