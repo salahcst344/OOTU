@@ -4,7 +4,7 @@ const SecondaryHeading = ({ children, styles }) => {
       style={{
         fontSize: "4.4rem",
         lineHeight: 1.2,
-        marginBottom: "9.6rem",
+        marginBottom: "4.8rem",
         ...styles,
       }}
     >
