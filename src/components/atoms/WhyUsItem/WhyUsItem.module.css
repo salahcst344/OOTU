@@ -1,0 +1,40 @@
+.why-us-item {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+.why-us-item svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: var(--white);
+  position: relative;
+}
+
+.why-us-svg {
+  position: relative;
+}
+
+.why-us-svg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 50%;
+  translate: -23% -23%;
+  background-color: var(--primary-shade);
+  z-index: -1;
+}
+
+.why-us-item > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.why-us-item p {
+  margin-bottom: 0;
+}
