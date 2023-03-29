@@ -3,11 +3,10 @@ import NavLink from "../../atoms/NavLink";
 import classes from "./NavLinks.module.css";
 
 const NavLinks = ({ navLinks, CTABtn }) => {
-  console.log(CTABtn);
   return (
     <ul className={classes["nav-links"]}>
       {navLinks.map((link) => (
-        <NavLink link={link} />
+        <NavLink key={link.path} link={link} />
       ))}
       <NavLink
         link={{
