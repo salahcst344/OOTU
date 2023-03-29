@@ -3,3 +3,7 @@
   align-items: center;
   gap: 2.8rem;
 }
+
+.nav-links a:last-child:after {
+  display: none;
+}
