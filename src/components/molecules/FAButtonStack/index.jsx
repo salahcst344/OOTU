@@ -16,7 +16,7 @@ const FAButtonStack = ({ contactInfo }) => {
       <FAButton open={open} handleClick={() => setOpen((prev) => !prev)} />
       <motion.div animate={open ? "open" : "closed"} variants={variants}>
         {contactInfo.map((item) => (
-          <FAButtonItem icon={item.icon} path={item.path} />
+          <FAButtonItem key={item.path} icon={item.icon} path={item.path} />
         ))}
       </motion.div>
     </div>
