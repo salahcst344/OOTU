@@ -5,7 +5,7 @@ const SubHeading = ({ children, styles }) => {
         display: "block",
         fontSize: "1.8rem",
         fontWeight: 500,
-        color: "var(--secndary-shade)",
+        color: "var(--primary-shade)",
         textTransform: "uppercase",
         marginBottom: "1.6rem",
         letterSpacing: "0.75px",
