@@ -1,4 +1,7 @@
 import Layout from "../components/templates/Layout";
+import { EMAIL, TEL } from "../config/contactInfo";
+import { ReactComponent as MailIcon } from "../assets/Icons/mail.svg";
+import { ReactComponent as PhoneIcon } from "../assets/Icons/phone.svg";
 
 const PageLayout = ({ children }) => {
   const navLinks = [
@@ -23,9 +26,19 @@ const PageLayout = ({ children }) => {
     text: "services",
     path: "/services",
   };
+  const contactInfo = [
+    {
+      path: `mailto:${EMAIL}`,
+      icon: <MailIcon />,
+    },
+    {
+      path: `tel:${TEL}`,
+      icon: <PhoneIcon />,
+    },
+  ];
 
   return (
-    <Layout navLinks={navLinks} CTABtn={CTABtn}>
+    <Layout navLinks={navLinks} CTABtn={CTABtn} contactInfo={contactInfo}>
       {children}
     </Layout>
   );
