@@ -1,0 +1,11 @@
+.FAButton {
+  background-image: var(--primary-gradient);
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+}
+
+.FAButton svg {
+  fill: var(--white);
+  width: 3.2rem;
+  height: 3.2rem;
+}
