@@ -29,11 +29,8 @@ html {
 body {
   color: var(--white);
   overflow-x: hidden;
-  background-image: linear-gradient(
-      var(--black-low-opacity),
-      var(--black-low-opacity)
-    ),
-    url("./assets/stars2.jpg");
+  background-image: url("./assets/stars2.jpg");
+  backdrop-filter: blur(0.7px);
   background-repeat: repeat-y;
   background-size: cover;
 }
