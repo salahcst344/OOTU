@@ -2,16 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-shade: #670b67;
-  --primary-color: #810e81;
-  --primary-tint: #9a3e9a;
-  --secndary-shade: #10bcb6;
-  --secndary-color: #14ebe3;
-  --secndary-tint: #43efe9;
+  --primary-shade: #10bcb6;
+  --primary-color: #14ebe3;
+  --primary-tint: #43efe9;
+  --secondary-shade: #670b67;
+  --secondary-color: #810e81;
+  --secondary-tint: #9a3e9a;
   --white: #f2e7f2;
   --black: #0d010d;
   --black-low-opacity: rgba(13, 1, 13, 0.2);
   --black-med-opacity: rgba(13, 1, 13, 0.5);
+  --primary-gradient: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
 }
 
 * {
