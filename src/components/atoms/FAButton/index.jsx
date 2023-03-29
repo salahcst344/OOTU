@@ -4,7 +4,7 @@ import { ReactComponent as XIcon } from "../../../assets/Icons/x.svg";
 
 const FAButton = ({ open, handleClick }) => {
   return (
-    <button className={classes.FAButton} onClick={handleClick}>
+    <button className={`btn ${classes.FAButton}`} onClick={handleClick}>
       {!open ? <ChatIcon /> : <XIcon />}
     </button>
   );
