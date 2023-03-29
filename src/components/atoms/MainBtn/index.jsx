@@ -1,21 +1,23 @@
-import classes from "./MainBtn.module.css";
 import { motion } from "framer-motion";
 
-const MainBtn = ({ children }) => {
+const MainBtn = ({ children, href }) => {
   return (
-    <motion.button
-      className={classes["main-btn"]}
+    <motion.a
+      className="btn"
+      href={href}
       initial={{
-        backgroundSize: "200% 200%",
+        backgroundColor: "var(--primary-shade)",
         color: "var(--white)",
       }}
-      whileHover={{ backgroundPosition: "100% 100%", color: "var(--black)" }}
+      whileHover={{
+        backgroundColor: "var(--primary-color)",
+      }}
       transition={{
-        duration: 0.3,
+        duration: 0.5,
       }}
     >
       {children}
-    </motion.button>
+    </motion.a>
   );
 };
 
