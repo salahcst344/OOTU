@@ -11,7 +11,7 @@ const MainBtn = ({ children }) => {
       }}
       whileHover={{ backgroundPosition: "100% 100%", color: "var(--black)" }}
       transition={{
-        stiffness: "100",
+        duration: 0.3,
       }}
     >
       {children}
