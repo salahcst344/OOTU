@@ -1,4 +1,9 @@
 .hero-section {
   text-align: center;
-  padding-block: 9.6rem;
+  padding-block: 25rem;
+  display: flex;
+  background-image: url("../../../assets/stars4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 15%;
 }
