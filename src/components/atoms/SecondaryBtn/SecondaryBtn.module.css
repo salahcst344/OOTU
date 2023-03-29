@@ -1,3 +1,8 @@
+.secondary-btn {
+  color: var(--black);
+  background-color: var(--white);
+}
+
 .secondary-btn:hover {
   background-color: transparent;
   color: var(--white);
