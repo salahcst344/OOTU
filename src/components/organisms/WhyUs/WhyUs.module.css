@@ -1,0 +1,11 @@
+.why-us > div {
+  background-color: black;
+  background-image: url("../../../assets/marketing-bg.png");
+  background-size: cover;
+  padding-block: 4.8rem;
+  border-radius: 11px;
+}
+
+.why-us p {
+  opacity: 0.8;
+}
