@@ -14,7 +14,7 @@
 }
 
 .why-img {
-  width: 75%;
+  width: 110%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,4 +22,8 @@
 
 .why-img img {
   width: 100%;
+}
+.why-us > div > div:last-child {
+  display: flex;
+  gap: 6.4rem;
 }

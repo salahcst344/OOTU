@@ -19,17 +19,17 @@ const WhyUs = ({ whyUs }) => {
           >
             Why Choose Us
           </SecondaryHeading>
-          <LightDescription styles={{}}>
+          <LightDescription styles={{ width: "60ch" }}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
             ad maxime repellat at et ipsam.
           </LightDescription>
         </div>
         <CenteredContainer>
           <WhyUsList whyUs={whyUs} />
+          <div className={classes["why-img"]}>
+            <img src={whyUsUmg} alt="why us" />
+          </div>
         </CenteredContainer>
-      </div>
-      <div className={classes["why-img"]}>
-        <img src={whyUsUmg} alt="why us" />
       </div>
     </section>
   );
