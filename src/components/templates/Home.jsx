@@ -1,11 +1,11 @@
 import HeroSection from "../organisms/HeroSection";
-import WhyUs from "../organisms/WhyUs";
+import WhyUsSection from "../organisms/WhyUsSection";
 
 const Home = ({ heroContent, whyUs }) => {
   return (
     <>
       <HeroSection heroContent={heroContent} />
-      <WhyUs whyUs={whyUs} />
+      <WhyUsSection whyUs={whyUs} />
     </>
   );
 };
