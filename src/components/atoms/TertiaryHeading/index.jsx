@@ -7,6 +7,7 @@ const TertiaryHeading = ({ children, styles }) => {
   const transition = {
     type: "spring",
     bounce: 0.25,
+    duration: 0.7,
   };
 
   useEffect(() => {

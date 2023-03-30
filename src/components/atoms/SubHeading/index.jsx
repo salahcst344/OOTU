@@ -4,18 +4,31 @@ import { useEffect } from "react";
 const SubHeading = ({ children, styles }) => {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope, { once: true });
+  const transition = {
+    type: "spring",
+    bounce: 0.25,
+    duration: 0.7,
+  };
 
   useEffect(() => {
     if (isInView) {
-      animate(scope.current, {
-        translateY: 0,
-        opacity: 1,
-      });
+      animate(
+        scope.current,
+        {
+          translateY: 0,
+          opacity: 1,
+        },
+        transition
+      );
     } else {
-      animate(scope.current, {
-        translateY: "-150%",
-        opacity: 0,
-      });
+      animate(
+        scope.current,
+        {
+          translateY: "-150%",
+          opacity: 0,
+        },
+        transition
+      );
     } // eslint-disable-next-line
   }, [isInView]);
   return (
@@ -32,13 +45,8 @@ const SubHeading = ({ children, styles }) => {
         ...styles,
       }}
       initial={{
-        translateY: "-250%",
+        translateY: "-150%",
         opacity: 0,
-      }}
-      transition={{
-        type: "spring",
-        stiffness: 70,
-        bounce: 0.5,
       }}
     >
       {children}

@@ -7,7 +7,7 @@ const WhyUsImg = () => {
   const isInView = useInView(scope, { once: true });
   const transition = {
     type: "spring",
-    duration: 1.3,
+    duration: 1.8,
   };
 
   useEffect(() => {

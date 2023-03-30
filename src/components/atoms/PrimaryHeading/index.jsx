@@ -20,6 +20,7 @@ const PrimaryHeading = ({ children, styles }) => {
       transition={{
         type: "spring",
         bounce: 0.25,
+        duration: 0.7,
       }}
     >
       {children}

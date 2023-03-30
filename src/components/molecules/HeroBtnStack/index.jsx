@@ -21,6 +21,7 @@ const HeroBtnStack = ({ mainBtn, secondaryBtn }) => {
       transition={{
         type: "spring",
         bounce: 0.6,
+        duration: 1,
         delay: 0.3,
       }}
     >
