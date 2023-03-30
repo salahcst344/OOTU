@@ -9,9 +9,13 @@
 .why-us > div:last-child {
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 2.4rem;
 }
 
 .why-us > div > div:last-child {
-  width: 50%;
+  width: 75%;
+}
+
+.why-us > div > div:last-child img {
+  width: 100%;
 }

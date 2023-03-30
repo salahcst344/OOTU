@@ -2,7 +2,7 @@ import LightDescription from "../../atoms/LightDescription";
 import SecondaryHeading from "../../atoms/SecondaryHeading";
 import SubHeading from "../../atoms/SubHeading";
 import WhyUsList from "../../molecules/WhyUsList";
-import { ReactComponent as WhyUsImg } from "../../../assets/why-us.svg";
+import whyUsUmg from "../../../assets/why-us2.jpg";
 import classes from "./WhyUs.module.css";
 
 const WhyUs = ({ whyUs }) => {
@@ -17,7 +17,7 @@ const WhyUs = ({ whyUs }) => {
       <div>
         <WhyUsList whyUs={whyUs} />
         <div>
-          <WhyUsImg />
+          <img src={whyUsUmg} alt="why us" />
         </div>
       </div>
     </section>
