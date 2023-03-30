@@ -9,7 +9,13 @@ const WhyUsItem = ({ whyUs }) => {
         <img src={whyUs.img} alt={whyUs.title} />
       </div>
       <div>
-        <TertiaryHeading>{whyUs.title}</TertiaryHeading>
+        <TertiaryHeading
+          styles={{
+            color: "var(--primary-shade)",
+          }}
+        >
+          {whyUs.title}
+        </TertiaryHeading>
         <LightDescription gutterButtom={false}>
           {whyUs.description}
         </LightDescription>
