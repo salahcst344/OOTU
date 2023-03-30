@@ -2,7 +2,7 @@ const TertiaryHeading = ({ children, styles }) => {
   return (
     <h3
       style={{
-        fontSize: "3rem",
+        fontSize: "2.8rem",
         lineHeight: 1.2,
         marginBottom: "3.2rem",
         ...styles,
