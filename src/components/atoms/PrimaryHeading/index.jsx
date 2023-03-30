@@ -1,39 +1,8 @@
-import { motion, useAnimate, useInView } from "framer-motion";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
 
-const PrimaryHeading = ({ children, styles, once }) => {
-  const [scope, animate] = useAnimate();
-  const isInView = useInView(scope, { once });
-  const transition = {
-    type: "spring",
-    bounce: 0.25,
-  };
-
-  useEffect(() => {
-    if (isInView) {
-      animate(
-        scope.current,
-        {
-          translateX: 0,
-          opacity: 1,
-        },
-        transition
-      );
-    } else {
-      animate(
-        scope.current,
-        {
-          translateX: "-60%",
-          opacity: 0,
-        },
-        transition
-      );
-    } // eslint-disable-next-line
-  }, [isInView]);
-
+const PrimaryHeading = ({ children, styles }) => {
   return (
     <motion.h1
-      ref={scope}
       style={{
         fontSize: "5.2rem",
         lineHeight: 1.05,
@@ -43,6 +12,14 @@ const PrimaryHeading = ({ children, styles, once }) => {
       initial={{
         translateX: "-60%",
         opacity: 0,
+      }}
+      animate={{
+        translateX: 0,
+        opacity: 1,
+      }}
+      transition={{
+        type: "spring",
+        bounce: 0.25,
       }}
     >
       {children}

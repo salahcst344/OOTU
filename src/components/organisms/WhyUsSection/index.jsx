@@ -2,9 +2,9 @@ import LightDescription from "../../atoms/LightDescription";
 import SecondaryHeading from "../../atoms/SecondaryHeading";
 import SubHeading from "../../atoms/SubHeading";
 import WhyUsList from "../../molecules/WhyUsList";
-import whyUsUmg from "../../../assets/why-us2.jpg";
-import classes from "./WhyUs.module.css";
 import CenteredContainer from "../../atoms/CenteredContainer";
+import WhyUsImg from "../../atoms/WhyUsImg";
+import classes from "./WhyUs.module.css";
 
 const WhyUs = ({ whyUs }) => {
   return (
@@ -28,9 +28,7 @@ const WhyUs = ({ whyUs }) => {
           <WhyUsList whyUs={whyUs} />
         </CenteredContainer>
       </div>
-      <div className={classes["why-img"]}>
-        <img src={whyUsUmg} alt="why us" />
-      </div>
+      <WhyUsImg />
     </section>
   );
 };

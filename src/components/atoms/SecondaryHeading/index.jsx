@@ -1,9 +1,9 @@
 import { useAnimate, useInView, motion } from "framer-motion";
 import { useEffect } from "react";
 
-const SecondaryHeading = ({ children, styles, once }) => {
+const SecondaryHeading = ({ children, styles }) => {
   const [scope, animate] = useAnimate();
-  const isInView = useInView(scope, { once });
+  const isInView = useInView(scope, { once: true });
   const transition = {
     type: "spring",
     bounce: 0.25,

@@ -1,13 +1,13 @@
 import { motion, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
+import whyUsUmg from "../../../assets/why-us2.jpg";
 
-const LightDescription = ({ children, styles, gutterButtom = true }) => {
+const WhyUsImg = () => {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope, { once: true });
-
   const transition = {
     type: "spring",
-    bounce: 0.25,
+    duration: 1.3,
   };
 
   useEffect(() => {
@@ -15,8 +15,8 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
       animate(
         scope.current,
         {
-          translateX: 0,
-          opacity: styles?.opacity || 0.65,
+          opacity: 1,
+          scale: 1,
         },
         transition
       );
@@ -24,8 +24,8 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
       animate(
         scope.current,
         {
-          translateX: "100%",
           opacity: 0,
+          scale: 0,
         },
         transition
       );
@@ -33,23 +33,19 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
   }, [isInView]);
 
   return (
-    <motion.p
+    <motion.div
       ref={scope}
+      initial={{ opacity: 0 }}
       style={{
-        fontSize: "1.8rem",
-        lineHeight: 1.5,
-        marginBottom: gutterButtom ? "4.8rem" : undefined,
-        opacity: 0.65,
-        ...styles,
-      }}
-      initial={{
-        translateX: "100%",
-        opacity: 0,
+        width: "110%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      {children}
-    </motion.p>
+      <img src={whyUsUmg} alt="why us" width="100%" />
+    </motion.div>
   );
 };
 
-export default LightDescription;
+export default WhyUsImg;

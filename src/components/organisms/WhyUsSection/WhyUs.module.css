@@ -12,14 +12,3 @@
 .heading {
   margin-block-end: 12.8rem;
 }
-
-.why-img {
-  width: 110%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.why-img img {
-  width: 100%;
-}

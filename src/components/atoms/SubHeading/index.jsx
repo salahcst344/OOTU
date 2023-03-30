@@ -1,9 +1,9 @@
 import { motion, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 
-const SubHeading = ({ children, styles, once }) => {
+const SubHeading = ({ children, styles }) => {
   const [scope, animate] = useAnimate();
-  const isInView = useInView(scope, { once });
+  const isInView = useInView(scope, { once: true });
 
   useEffect(() => {
     if (isInView) {

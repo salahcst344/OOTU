@@ -1,14 +1,45 @@
+import { motion, useAnimate, useInView } from "framer-motion";
+import { useEffect } from "react";
 import LightDescription from "../LightDescription";
 import TertiaryHeading from "../TertiaryHeading";
 import classes from "./WhyUsItem.module.css";
 
 const WhyUsItem = ({ whyUs }) => {
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope, { once: true });
+  const transition = {
+    type: "spring",
+    duration: 1.3,
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      animate(
+        scope.current,
+        {
+          opacity: 1,
+          scale: 1,
+        },
+        transition
+      );
+    } else {
+      animate(
+        scope.current,
+        {
+          opacity: 0,
+          scale: 0,
+        },
+        transition
+      );
+    } // eslint-disable-next-line
+  }, [isInView]);
+
   return (
     <li className={classes["why-us-item"]}>
       <div className={classes["why-us-dot"]}>
-        <div>
+        <motion.div ref={scope} initial={{ opacity: 0, scale: 0 }}>
           <img src={whyUs.img} alt={whyUs.title} />
-        </div>
+        </motion.div>
       </div>
       <div>
         <TertiaryHeading

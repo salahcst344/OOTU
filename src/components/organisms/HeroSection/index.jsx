@@ -10,9 +10,9 @@ const HeroSection = ({ heroContent }) => {
   return (
     <section className={classes["hero-section"]}>
       <CenteredContainer hero>
-        <SubHeading once>{heroContent?.subHeading}</SubHeading>
-        <PrimaryHeading once>{heroContent?.main}</PrimaryHeading>
-        <LightDescription once styles={{ opacity: 0.9 }}>
+        <SubHeading>{heroContent?.subHeading}</SubHeading>
+        <PrimaryHeading>{heroContent?.main}</PrimaryHeading>
+        <LightDescription styles={{ opacity: 0.9 }}>
           {heroContent?.secondary}
         </LightDescription>
         <HeroBtnStack
