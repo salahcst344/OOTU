@@ -1,7 +1,7 @@
 import Home from "../components/templates/Home";
-import { ReactComponent as RocketIcon } from "../assets/Icons/rocket.svg";
-import { ReactComponent as ChartIcon } from "../assets/Icons/chart.svg";
-import { ReactComponent as DiamondIcon } from "../assets/Icons/diamond.svg";
+import planet1 from "../assets/services-planets/planet3.png";
+import planet2 from "../assets/services-planets/planet4.png";
+import planet3 from "../assets/services-planets/planet6.png";
 
 const HomePage = () => {
   const heroContent = {
@@ -17,19 +17,19 @@ const HomePage = () => {
       title: "First Working Prosses",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, odit dolorem recusandae earum ipsam fugiat accusamus aliquid repellendus minus? Minus?",
-      icon: <RocketIcon />,
+      img: planet1,
     },
     {
       title: "High-End Analizing",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, odit dolorem recusandae earum ipsam fugiat accusamus aliquid repellendus minus? Minus?",
-      icon: <ChartIcon />,
+      img: planet2,
     },
     {
       title: "Dedicate Team",
       description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, odit dolorem recusandae earum ipsam fugiat accusamus aliquid repellendus minus? Minus?",
-      icon: <DiamondIcon />,
+      img: planet3,
     },
   ];
 
