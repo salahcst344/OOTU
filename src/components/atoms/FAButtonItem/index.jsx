@@ -1,10 +1,11 @@
 import classes from "./FABItem.module.css";
+import { motion } from "framer-motion";
 
 const FAButtonItem = ({ icon, path }) => {
   return (
-    <a href={path} className={classes["fab-item"]}>
+    <motion.a href={path} className={classes["fab-item"]}>
       {icon}
-    </a>
+    </motion.a>
   );
 };
 

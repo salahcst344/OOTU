@@ -1,13 +1,27 @@
 import MainBtn from "../../atoms/MainBtn";
 import SecondaryBtn from "../../atoms/SecondaryBtn";
+import { motion } from "framer-motion";
 
 const HeroBtnStack = ({ mainBtn, secondaryBtn }) => {
   return (
-    <div
+    <motion.div
       style={{
         display: "flex",
         gap: "3.2rem",
         justifyContent: "center",
+      }}
+      initial={{
+        opacity: 0,
+        gap: "9.6rem",
+      }}
+      animate={{
+        opacity: 1,
+        gap: "3.2rem",
+      }}
+      transition={{
+        type: "spring",
+        bounce: 0.6,
+        delay: 0.3,
       }}
     >
       <MainBtn href={mainBtn.path}>
@@ -15,7 +29,7 @@ const HeroBtnStack = ({ mainBtn, secondaryBtn }) => {
         {mainBtn.icon}
       </MainBtn>
       <SecondaryBtn href={secondaryBtn.path}>{secondaryBtn.text}</SecondaryBtn>
-    </div>
+    </motion.div>
   );
 };
 

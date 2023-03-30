@@ -1,6 +1,39 @@
-const TertiaryHeading = ({ children, styles }) => {
+import { useAnimate, useInView, motion } from "framer-motion";
+import { useEffect } from "react";
+
+const TertiaryHeading = ({ children, styles, once }) => {
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope, { once });
+  const transition = {
+    type: "spring",
+    bounce: 0.25,
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      animate(
+        scope.current,
+        {
+          translateX: 0,
+          opacity: 1,
+        },
+        transition
+      );
+    } else {
+      animate(
+        scope.current,
+        {
+          translateX: "-60%",
+          opacity: 0,
+        },
+        transition
+      );
+    } // eslint-disable-next-line
+  }, [isInView]);
+
   return (
-    <h3
+    <motion.h3
+      ref={scope}
       style={{
         fontSize: "2.8rem",
         lineHeight: 1.2,
@@ -9,7 +42,7 @@ const TertiaryHeading = ({ children, styles }) => {
       }}
     >
       {children}
-    </h3>
+    </motion.h3>
   );
 };
 

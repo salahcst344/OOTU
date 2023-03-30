@@ -12,14 +12,29 @@ const FAButtonStack = ({ contactInfo }) => {
   };
 
   return (
-    <div className={classes["fab-stack"]}>
+    <motion.div
+      className={classes["fab-stack"]}
+      initial={{
+        translateX: "100%",
+        opacity: 0,
+      }}
+      animate={{
+        translateX: 0,
+        opacity: 1,
+      }}
+      transition={{
+        type: "spring",
+        bounce: 0.6,
+        delay: 0.5,
+      }}
+    >
       <FAButton open={open} handleClick={() => setOpen((prev) => !prev)} />
       <motion.div animate={open ? "open" : "closed"} variants={variants}>
         {contactInfo.map((item) => (
           <FAButtonItem key={item.path} icon={item.icon} path={item.path} />
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
