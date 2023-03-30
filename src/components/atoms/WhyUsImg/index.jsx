@@ -42,6 +42,13 @@ const WhyUsImg = () => {
         justifyContent: "center",
         alignItems: "center",
       }}
+      animate={{
+        translateY: ["10%", "-10%", "10%"],
+      }}
+      transition={{
+        duration: 10,
+        repeat: Infinity,
+      }}
     >
       <img src={whyUsUmg} alt="why us" width="100%" />
     </motion.div>

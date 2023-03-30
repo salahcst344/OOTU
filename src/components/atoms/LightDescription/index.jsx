@@ -25,7 +25,7 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
       animate(
         scope.current,
         {
-          translateX: "100%",
+          translateX: "60%",
           opacity: 0,
         },
         transition
@@ -44,7 +44,7 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
         ...styles,
       }}
       initial={{
-        translateX: "100%",
+        translateX: "60%",
         opacity: 0,
       }}
     >
