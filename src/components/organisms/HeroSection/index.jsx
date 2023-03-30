@@ -4,6 +4,7 @@ import PrimaryHeading from "../../atoms/PrimaryHeading";
 import classes from "./HeroSection.module.css";
 import LightDescription from "../../atoms/LightDescription";
 import HeroBtnStack from "../../molecules/HeroBtnStack";
+import FadeDiv from "../../atoms/FadeDiv";
 
 const HeroSection = ({ heroContent }) => {
   return (
@@ -17,6 +18,8 @@ const HeroSection = ({ heroContent }) => {
           secondaryBtn={heroContent.secondaryBtn}
         />
       </CenteredContainer>
+
+      <FadeDiv />
     </section>
   );
 };
