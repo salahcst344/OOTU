@@ -7,7 +7,7 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
         fontSize: "2rem",
         lineHeight: 1.5,
         marginBottom: gutterButtom ? "4.8rem" : undefined,
-        opacity: 0.7,
+        opacity: 0.65,
         ...styles,
       }}
     >
