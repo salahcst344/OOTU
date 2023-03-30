@@ -23,7 +23,3 @@
 .why-img img {
   width: 100%;
 }
-.why-us > div > div:last-child {
-  display: flex;
-  gap: 6.4rem;
-}
