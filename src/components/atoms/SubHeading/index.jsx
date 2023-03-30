@@ -7,7 +7,7 @@ const SubHeading = ({ children, styles }) => {
   const transition = {
     type: "spring",
     bounce: 0.25,
-    duration: 0.7,
+    duration: 2,
   };
 
   useEffect(() => {
@@ -17,15 +17,6 @@ const SubHeading = ({ children, styles }) => {
         {
           translateY: 0,
           opacity: 1,
-        },
-        transition
-      );
-    } else {
-      animate(
-        scope.current,
-        {
-          translateY: "-150%",
-          opacity: 0,
         },
         transition
       );

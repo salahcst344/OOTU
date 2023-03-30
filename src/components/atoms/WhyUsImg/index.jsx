@@ -7,7 +7,7 @@ const WhyUsImg = () => {
   const isInView = useInView(scope, { once: true });
   const transition = {
     type: "spring",
-    duration: 1.8,
+    duration: 2.5,
   };
 
   useEffect(() => {
@@ -20,34 +20,18 @@ const WhyUsImg = () => {
         },
         transition
       );
-    } else {
-      animate(
-        scope.current,
-        {
-          opacity: 0,
-          scale: 0,
-        },
-        transition
-      );
     } // eslint-disable-next-line
   }, [isInView]);
 
   return (
     <motion.div
       ref={scope}
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 0, scale: 0 }}
       style={{
         width: "110%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-      }}
-      animate={{
-        translateY: ["10%", "-10%", "10%"],
-      }}
-      transition={{
-        duration: 10,
-        repeat: Infinity,
       }}
     >
       <img src={whyUsUmg} alt="why us" width="100%" />

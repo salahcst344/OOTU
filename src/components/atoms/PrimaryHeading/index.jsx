@@ -10,7 +10,7 @@ const PrimaryHeading = ({ children, styles }) => {
         ...styles,
       }}
       initial={{
-        translateX: "-60%",
+        translateX: "-40%",
         opacity: 0,
       }}
       animate={{
@@ -19,8 +19,8 @@ const PrimaryHeading = ({ children, styles }) => {
       }}
       transition={{
         type: "spring",
-        bounce: 0.25,
-        duration: 0.7,
+        bounce: 0.2,
+        duration: 1.5,
       }}
     >
       {children}

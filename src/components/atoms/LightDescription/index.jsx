@@ -8,7 +8,7 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
   const transition = {
     type: "spring",
     bounce: 0.25,
-    duration: 0.7,
+    duration: 2,
   };
 
   useEffect(() => {
@@ -18,15 +18,6 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
         {
           translateX: 0,
           opacity: styles?.opacity || 0.65,
-        },
-        transition
-      );
-    } else {
-      animate(
-        scope.current,
-        {
-          translateX: "60%",
-          opacity: 0,
         },
         transition
       );

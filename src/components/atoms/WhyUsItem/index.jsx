@@ -9,7 +9,7 @@ const WhyUsItem = ({ whyUs }) => {
   const isInView = useInView(scope, { once: true });
   const transition = {
     type: "spring",
-    duration: 1.5,
+    duration: 2.2,
   };
 
   useEffect(() => {
