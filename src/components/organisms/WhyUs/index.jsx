@@ -28,7 +28,7 @@ const WhyUs = ({ whyUs }) => {
           <WhyUsList whyUs={whyUs} />
         </CenteredContainer>
       </div>
-      <div className={classes['why-img']}>
+      <div className={classes["why-img"]}>
         <img src={whyUsUmg} alt="why us" />
       </div>
     </section>

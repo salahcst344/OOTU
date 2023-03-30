@@ -12,7 +12,9 @@ const HeroSection = ({ heroContent }) => {
       <CenteredContainer hero>
         <SubHeading>{heroContent?.subHeading}</SubHeading>
         <PrimaryHeading>{heroContent?.main}</PrimaryHeading>
-        <LightDescription>{heroContent?.secondary}</LightDescription>
+        <LightDescription styles={{ opacity: 0.9 }}>
+          {heroContent?.secondary}
+        </LightDescription>
         <HeroBtnStack
           mainBtn={heroContent.mainBtn}
           secondaryBtn={heroContent.secondaryBtn}

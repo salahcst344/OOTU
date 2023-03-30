@@ -1,6 +1,7 @@
 .why-us-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6.4rem;
   list-style: none;
 }
@@ -9,24 +10,21 @@
   width: 4.8rem;
   height: 4.8rem;
   scale: 2;
-  position: relative;
 }
 
-.why-us-dot::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  translate: -23% -23%;
-  width: 3.6rem;
-  height: 3.6rem;
-  background-color: rgba(20, 235, 228, 0.537);
+.why-us-dot div {
+  background-color: rgba(20, 235, 228, 0.4);
   border-radius: 50%;
-  z-index: -1;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .why-us-dot img {
-  width: 100%;
+  width: 2.6rem;
+  width: 2.6rem;
 }
 
 .why-us-item > div:last-child {
