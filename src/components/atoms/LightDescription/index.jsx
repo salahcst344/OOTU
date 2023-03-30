@@ -35,7 +35,7 @@ const LightDescription = ({ children, styles, gutterButtom = true }) => {
         ...styles,
       }}
       initial={{
-        translateX: "60%",
+        translateX: "50px",
         opacity: 0,
       }}
     >

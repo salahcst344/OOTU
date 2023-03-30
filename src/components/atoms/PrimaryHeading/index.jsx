@@ -10,7 +10,7 @@ const PrimaryHeading = ({ children, styles }) => {
         ...styles,
       }}
       initial={{
-        translateX: "-40%",
+        translateX: "-50px",
         opacity: 0,
       }}
       animate={{

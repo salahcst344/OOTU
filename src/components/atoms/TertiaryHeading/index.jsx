@@ -32,6 +32,10 @@ const TertiaryHeading = ({ children, styles }) => {
         marginBottom: "3.2rem",
         ...styles,
       }}
+      initial={{
+        translateX: "-50px",
+        opacity: 0,
+      }}
     >
       {children}
     </motion.h3>

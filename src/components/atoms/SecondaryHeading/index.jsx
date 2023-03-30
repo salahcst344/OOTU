@@ -33,7 +33,7 @@ const SecondaryHeading = ({ children, styles }) => {
         ...styles,
       }}
       initial={{
-        translateX: "-60%",
+        translateX: "-50px",
         opacity: 0,
       }}
     >
