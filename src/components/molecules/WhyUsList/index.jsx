@@ -10,7 +10,7 @@ const WhyUsList = ({ whyUs }) => {
       }}
     >
       {whyUs.map((item) => (
-        <WhyUsItem whyUs={item} />
+        <WhyUsItem key={item.title} whyUs={item} />
       ))}
     </ul>
   );
