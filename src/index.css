@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 
 :root {
+  --primary-shader: #0c8d88;
   --primary-shade: #10bcb6;
   --primary-color: #14ebe3;
   --primary-tint: #43efe9;
@@ -49,6 +50,10 @@ h3 {
   font-weight: 700;
   color: inherit;
   letter-spacing: -0.5px;
+}
+
+p {
+  letter-spacing: 0.75px;
 }
 
 .btn {
