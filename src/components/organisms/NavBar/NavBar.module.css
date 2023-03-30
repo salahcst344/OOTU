@@ -10,7 +10,8 @@
 
 .sticky {
   position: fixed;
-  background-color: #e8fdfcc3;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   backdrop-filter: blur(10px);
   color: var(--black);
 }
